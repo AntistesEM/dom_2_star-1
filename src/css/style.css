@@ -1,0 +1,51 @@
+/* Добавить отступы для контейнера таблицы: */
+div {
+  margin: 20px;
+}
+
+
+/* Установить границу и отступы для таблицы: */
+table {
+  border-collapse: collapse; /* Склеивает границы ячеек в одну */
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+/* Задать стиль для заголовка таблицы: */
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+/* Применить стиль для ячеек таблицы: */
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Добавить отступы между строками таблицы: */
+tr:not(:first-child) {
+  margin-top: 8px;
+}
+
+/* Подсветить строку при наведении на нее курсора: */
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+.arrow {
+  margin-left: 5px;
+  color: blue;
+}
+
+.arrow.up::after {
+  content: "↑";
+}
+
+.arrow.down::after {
+  content: "↓";
+}
